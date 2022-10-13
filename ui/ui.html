@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="ui.css">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+
+<body>
+  <div id="game-mock"></div>
+  <div id="app">
+    <div id="form">
+      <div id="background"></div>
+      <div id="title">
+        <h2>NOVO PERSONAGEM</h2>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col">
+          <div class="input-group">
+            <span class="input-group-text" id="addon-wrapping">
+              <i class="las la-user-alt"></i>
+            </span>
+            <input id="name" type="text" class="form-control form-custom form-custom" placeholder="Nome Completo">
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-7">
+          <div class="input-group">
+            <span class="input-group-text" id="addon-wrapping">
+              <i class="las la-calendar-day"></i>
+            </span>
+            <input id="born-date" maxlength="10" type="text" class="form-control form-custom" placeholder="Data Nasc.">
+          </div>
+        </div>
+        <div class="col-5 m-auto text-white">
+          <span id="old"></span> 
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col">
+          <div class="input-group">
+            <span class="input-group-text" id="addon-wrapping">
+              <i class="las la-lock"></i>
+            </span>
+            <input id="password" maxlength="10" type="password" class="form-control form-custom" placeholder="Senha">
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col">
+          <div class="input-group">
+            <span class="input-group-text" id="addon-wrapping">
+              <i class="las la-lock"></i>
+            </span>
+            <input id="verify-password" maxlength="10" type="password" class="form-control form-custom" placeholder="Conf. de Senha">
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3 mb-5">
+        <div class="col" style="font-size: .8rem; color: #cdc"> <i class="las la-info-circle"></i> A senha precisará ser informada sempre que for jogar.</div>
+      </div>
+      <div>
+        <button id="register" class="btn btn-primary btn-lg btn-custom">Criar!</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./assets/jquery.mask.min.js"></script>
+  <script src="./ui.js"></script>
+</body>
+
+</html>
